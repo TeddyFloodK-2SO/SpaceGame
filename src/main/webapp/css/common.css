@@ -1,0 +1,81 @@
+/*Для всех элементов и псевдоэлементов*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+    /* Для всей страницы */
+body, html {
+    background: url('../images/space-background.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    /*background-color: #0b0c2a;*/
+    color: #f0f8ff;
+}
+
+main{
+    height: 100%;
+}
+
+/* Общие кнопки */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Общие ссылки */
+a {
+    text-decoration: none;
+    color: #88f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Общие контейнеры с центровкой */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 8px;
+    border-radius: 4px;
+    color: #f0f8ff;
+    background-color: #1a1a3c;
+    border: 1px solid #5555ff;
+}
+
+/* Общие разделители */
+hr {
+    width: 80%;
+    border: 1px solid #4444ff;
+    margin: 20px 0;
+}
+
+/* Общие текстовые блоки для ошибок */
+p {
+    margin: 0;
+    word-wrap: break-word;
+}

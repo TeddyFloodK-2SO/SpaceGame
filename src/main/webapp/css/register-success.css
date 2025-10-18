@@ -1,0 +1,40 @@
+.register-success-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* центрируем контент вертикально */
+    padding: 20px;
+    text-align: center;
+}
+
+.success-title {
+    font-size: 48px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.success-error {
+    color: #ff5555;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    font-size: 24px;
+    color: #88f;
+    margin-bottom: 30px;
+}
+
+.success-action .success-button {
+    background-color: #4444ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success-action .success-button:hover {
+    background-color: #6666ff;
+}

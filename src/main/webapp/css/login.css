@@ -1,0 +1,48 @@
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Заголовок страницы */
+.login-title {
+    font-size: 48px;
+    text-align: center;
+    color: #ffcc00; /* золотистый космос */
+    margin: 20px 0;
+}
+
+/* Подзаголовок */
+.login-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #88f;
+}
+
+/* Ошибки входа */
+.login-error {
+    color: #ff5555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Кнопка формы */
+.login-button {
+    background-color: #4444ff;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #6666ff;
+}
+
+/* Ссылка снизу */
+.bottom-link {
+    text-align: center;
+    margin-top: 20px;
+}

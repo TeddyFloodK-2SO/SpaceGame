@@ -1,0 +1,70 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceGame</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/game.css">
+</head>
+<body>
+
+<main class="game-page">
+    <h1 class="game-title">Переулок</h1>
+    <div class="game-grid">
+
+        <%-- Левая колонка --%>
+        <div class="left-column">
+
+            <!-- Текст сцены -->
+            <div class="game-area">
+                <p class="game-text">${sessionScope.questText}</p>
+            </div>
+
+            <!-- Действия -->
+            <div class="actions-window">
+                <form action="${pageContext.request.contextPath}/alleyway" method="post">
+                    <button type="submit" name="action" value="enter_the_bar" class="action-button">
+                        🟢 Войти в бар
+                    </button>
+                    <button type="submit" name="action" value="search_through_the_trash" class="action-button">
+                        🟢 Обойти бар и поискать одежду в мусорных контейнерах
+                    </button>
+                    <button type="submit" name="action" value="clothing_store" class="action-button">
+                        🟢 Сканировать улицу в поисках магазина одежды
+                    </button>
+                    <button type="submit" name="action" value="going_naked" class="action-button">
+                        🟢 Убью Сару Коннор голым
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <%-- Правая колонка --%>
+        <div class="right-column">
+            <!-- Инвентарь -->
+            <div class="inventory-window">
+                <c:forEach var="item" items="${sessionScope.player.inventory}">
+                    <p>${item}</p>
+                </c:forEach>
+            </div>
+
+            <!-- Статы игрока -->
+            <div class="player-stats">
+                <p>❤️ Здоровье: ${sessionScope.player.health}</p>
+                <p>💰 Деньги: ${sessionScope.player.money}</p>
+            </div>
+
+            <!-- Картинка -->
+            <div class="game-picture">
+                <img src="${pageContext.request.contextPath}/images/${sessionScope.player.currentImage}" alt="Переулок"
+                     class="game-image"/>
+            </div>
+        </div>
+
+    </div>
+</main>
+</body>
+</html>

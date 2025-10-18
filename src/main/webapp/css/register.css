@@ -1,0 +1,48 @@
+.register-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Заголовок страницы */
+.register-title {
+    font-size: 48px;
+    text-align: center;
+    color: #ffcc00; /* золотистый космос */
+    margin: 20px 0;
+}
+
+/* Подзаголовок */
+.register-subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #88f;
+    margin-bottom: 20px;
+}
+
+/* Ошибки регистрации */
+.register-error {
+    color: #ff5555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Кнопка формы */
+.register-button {
+    background-color: #4444ff;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background-color: #6666ff;
+}
+
+/* Ссылка снизу */
+.bottom-link {
+    text-align: center;
+    margin-top: 20px;
+}
