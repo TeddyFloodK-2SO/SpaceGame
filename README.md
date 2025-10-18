@@ -119,16 +119,6 @@ mvn clean package
 ---
 
 
-<h2 align="center">🧾 GitHub / Лицензия</h2>
+<h2 align="center">🧾 GitHub</h2>
 
 - Репозиторий: [https://github.com/TeddyFloodK-2SO/SpaceGame](https://github.com/TeddyFloodK-2SO/SpaceGame)
-
-- Лицензия: [MIT License](LICENSE)
-
-
-
-
-
-
-
-
