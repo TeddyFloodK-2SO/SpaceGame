@@ -3,7 +3,7 @@
 
 ![](https://kartinki.pics/pics/uploads/posts/2022-08/1659533302_17-kartinkin-net-p-terminator-art-oboi-18.jpg)
 
-<h4 align="center"><i>Проект создан для демонстрации базовых навыков работы с Java, Servlets, !!!!!!!! и MySQL</i></h4>
+<h4 align="center"><i>Проект создан для демонстрации базовых навыков работы с Java, Java EE, Spring Framework, Hibernate и MySQL</i></h4>
 
 
 ---
